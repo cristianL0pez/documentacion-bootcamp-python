@@ -2,14 +2,14 @@
 
 > Autor: Alex Martinez (gambito700)
 > Fecha: 11 de marzo de 2026
-> Issue relacionada: #
+> Issue relacionada: #10
 
 ---
 
-## Definicion
+## 📘 Definición
 
 Los loops son estructuras de control que permiten repetir un bloque de codigo multiples veces.
-En python existen 2 tipos de loops y 4 modificadores:
+En Python existen 2 tipos de loops y 4 modificadores:
 
 loops:
 - `for`   → itera sobre una secuencia de elementos uno por uno
@@ -23,7 +23,7 @@ modificadores:
 
 ---
 
-## Para que sirve
+## 🧠 ¿Para qué sirve?
 
 Sirven para automatizar tareas repetitivas. Son fundamentales porque permiten:
 
@@ -34,7 +34,7 @@ Sirven para automatizar tareas repetitivas. Son fundamentales porque permiten:
 
 ---
 
-## Sintaxis
+## 🧩 Sintaxis
 
 ### FOR - 4 formas comunes
 - Numerica          `for n in range(x)`
@@ -49,6 +49,7 @@ Sirven para automatizar tareas repetitivas. Son fundamentales porque permiten:
 - `range(4)`   genera la secuencia 0, 1, 2, 3
 - se comienza desde 0 por lo que range(4) imprimira del 0 al 3
 - `print(n)`   imprime el valor actual de n en cada iteracion
+```
 for n in range(4):
     print(n)
 ```
@@ -69,7 +70,7 @@ no hay mas elementos → se detiene
 - `tree`                   variable receptora, puede llamarse de cualquier forma
 - `carpetas`               lista de elementos a recorrer
 - `print(tree)`            imprime el valor actual de tree en cada iteracion
-``` 
+```
 carpetas = ["C:\\", "control-de-flujo", "estructuras-de-datos", "funciones", "Fundamentos", "modulos", "poo"]
 
 for tree in carpetas:
@@ -91,7 +92,7 @@ no hay mas elementos → se detiene
 - `i`                                    es el indice o posicion del elemento
 - `tree`                                 es el valor del elemento
 - `enumerate`                            genera pares (indice, valor) automaticamente
-``` 
+```
 for i, tree in enumerate(carpetas):
     print(i, tree)
 ```
@@ -112,7 +113,7 @@ no hay mas elementos → se detiene
 - `tree`     recibe cada elemento de la lista carpetas
 - `letra`    recibe cada elemento de la lista letras
 - `zip`      une las listas en pares, se detiene cuando la lista mas corta se acaba
-``` 
+```
 numeros = [1, 2, 3, 4, 5, 6, 7]
 letras  = ["a", "b", "c", "d", "e", "f", "g", "h"]
 
@@ -140,7 +141,7 @@ no hay mas elementos → se detiene
 - `while contador < 5`  condicion que evalua si contador es menor que 5
 - `print(contador)`     imprime el valor actual de contador en cada iteracion
 - `contador += 1`       incrementa contador en 1, sin esto seria un loop infinito
-``` 
+```
 contador = 0
 while contador < 5:
     print(contador)
@@ -165,7 +166,7 @@ Flujo completo:
 - `len(carpetas)`            devuelve el total de elementos de la lista, en este caso 7
 - `carpetas[x]`              accede al elemento en la posicion x
 - `x += 1`                   incrementa x en 1, sin esto seria un loop infinito
-``` 
+```
 x = 0
 while x < len(carpetas):
     print(carpetas[x])
@@ -188,7 +189,7 @@ x = 7 → 7 < 7 → False → se detiene
 - `input()`                detiene el programa y espera que el usuario escriba algo
 - `if respuesta == 'si'`   evalua si el usuario escribio exactamente "si"
 - `break`                  si la condicion se cumple, sale del loop inmediatamente
-``` 
+```
 while True:
     respuesta = input("Que el bucle termine? : ")
     if respuesta == "si":
@@ -208,7 +209,7 @@ vuelta 3 → usuario escribe "si"  → break → se detiene
 ### MODIFICADORES
 
 **BREAK** - interrumpe el loop inmediatamente al cumplirse la condicion
-``` 
+```
 for n in range(10):
     if n == 5:
         break
@@ -223,7 +224,7 @@ n = 5 → 5 == 5 → break → se detiene
 ---
 
 **CONTINUE** - salta la iteracion actual y pasa a la siguiente
-``` 
+```
 for n in range(10):
     if n == 5:
         continue
@@ -238,7 +239,7 @@ n = 6 → 6 != 5 → imprime 6
 ---
 
 **PASS** - no hace nada, es un marcador de posicion
-``` 
+```
 for n in range(5):
     if n == 3:
         pass
@@ -253,7 +254,7 @@ n = 4 → imprime 4
 ---
 
 **ELSE** - se ejecuta cuando el loop termina sin un break
-``` 
+```
 for n in range(5):
     print(n)
 else:
