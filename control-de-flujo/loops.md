@@ -6,7 +6,7 @@
 
 ---
 
-## 📘 Definición
+##  Definición
 
 Los loops son estructuras de control que permiten repetir un bloque de codigo multiples veces.
 En Python existen 2 tipos de loops y 4 modificadores:
@@ -23,7 +23,7 @@ modificadores:
 
 ---
 
-## 🧠 ¿Para qué sirve?
+##  ¿Para qué sirve?
 
 Sirven para automatizar tareas repetitivas. Son fundamentales porque permiten:
 
